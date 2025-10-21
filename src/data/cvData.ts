@@ -300,7 +300,7 @@ export const cvData: CVData = {
   awards: [
     {
       title: "Member of International Institute for Extraordinary Intelligence ATOM",
-      year: "2018 - ongoing",
+      year: "2017 - ongoing",
       category: "recognition",
       image: "/awards/AtomiCertificate.png",
       link: "https://drive.google.com/file/d/1n5fEfhny4TZWN0wQCUcKAIyRpHliPThQ/view?usp=drive_link"
@@ -331,14 +331,14 @@ export const cvData: CVData = {
       year: "2020",
       category: "competition",
       image: "/awards/2019-2020PhysicsOlympiad.png",
-      link: "https://drive.google.com/file/d/1ubdnD0BPIsujyB3rndjd6V0AXQrQAoHN/view?usp=drive_link"
+      link: "https://drive.google.com/file/d/1D8hJtFPgIDE1zRX1jlYgXsELR600IqlL/view?usp=drive_link"
     },
     {
       title: "1st Prize at the National Physics Olympiad",
       year: "2019",
       category: "competition",
       image: "/awards/2018-2019PhysicsOlympiad.png",
-      link: "https://drive.google.com/file/d/1mIHCpqIVRmuh3x8VPzAADcA4kLdZBeyO/view?usp=drive_link"
+      link: "https://drive.google.com/file/d/1ubdnD0BPIsujyB3rndjd6V0AXQrQAoHN/view?usp=drive_link"
     },
     {
       title: "A-Levels Cambridge International Mathematics (Grade A*)",
@@ -362,7 +362,7 @@ export const cvData: CVData = {
       link: "https://drive.google.com/file/d/1gq8gutAchBLW7Wd1kMZuVoT1Z9VZsf0h/view?usp=drive_link"
     },
     {
-      title: "TestAS (Math & CS Module): Top 2% worldwide",
+      title: "TestAS (Math & CS & Natural Sciences Module): Top 2% worldwide",
       year: "2020",
       category: "certification",
       image: "/awards/TestAS Certificate.png",
