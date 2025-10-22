@@ -299,6 +299,13 @@ export const cvData: CVData = {
   
   awards: [
     {
+      title: "Gold Medal - Top 3 High School Graduate in 2021 in Albania",
+      year: "2021",
+      category: "recognition",
+      image: "/awards/GoldMedal.png",
+      link: "https://drive.google.com/file/d/1Br7GBTlr8vW971X-7d47XNBwollfCFE6/view?usp=drive_link"
+    },
+    {
       title: "Member of International Institute for Extraordinary Intelligence ATOM",
       year: "2017 - ongoing",
       category: "recognition",
