@@ -87,7 +87,7 @@ export const cvData: CVData = {
     email: "erinkerciku003@gmail.com",
     phone: "(+49) 17682053823",
     location: "Munich, Germany",
-    image: "/erinfoto.jpg"
+    image: "/fotoErinOct2025.jpeg"
   },
   
   social: [
@@ -255,15 +255,15 @@ export const cvData: CVData = {
   
   projects: [
     {
-      title: "MD2 Cryptographic Hash Function Analysis",
+      title: "Bachelor Thesis | Quantum Circuit Compilation",
       description: [
-        "Co-implemented the MD2 hashing algorithm in C, including padding, checksum, and 128-bit compression logic",
-        "Analyzed collision and preimage vulnerabilities through simulated attacks",
-        "Evaluated performance of sequential and threaded versions via runtime benchmarking on x86-64 systems"
+        "Researched quantum circuit cutting methods with emphasis on RZZ-gate optimizations to reduce sampling overhead",
+        "Implemented compiler-level experiments using IBM Qiskit and the Circuit Knitting Toolbox",
+        "Analyzed performance across random and benchmark circuits, achieving up to 3x reduction in computational cost compared to CNOT-based methods"
       ],
-      image: "/projects/MD2Hashing.png",
-      link: "https://drive.google.com/file/d/14DPPTVg3nb2QSSSLYA9TkreFDbffloH_/view?usp=drive_link",
-      tags: ["C", "Multithreading", "Cryptography"]
+      image: "/projects/BachelorArbeit.png",
+      link: "https://drive.google.com/file/d/19CdCGB4kddMgkG1zs9MRnZa9SFWYuMjG/view?usp=drive_link",
+      tags: ["Python", "Qiskit", "Quantum Computing"]
     },
     {
       title: "Internet Providers Comparison Website",
@@ -277,16 +277,16 @@ export const cvData: CVData = {
       tags: ["NextJS", "TypeScript", "Redis", "API Design"]
     },
     {
-      title: "Bachelor Thesis | Quantum Circuit Compilation",
+      title: "MD2 Cryptographic Hash Function Analysis",
       description: [
-        "Researched quantum circuit cutting methods with emphasis on RZZ-gate optimizations to reduce sampling overhead",
-        "Implemented compiler-level experiments using IBM Qiskit and the Circuit Knitting Toolbox",
-        "Analyzed performance across random and benchmark circuits, achieving up to 3x reduction in computational cost compared to CNOT-based methods"
+        "Co-implemented the MD2 hashing algorithm in C, including padding, checksum, and 128-bit compression logic",
+        "Analyzed collision and preimage vulnerabilities through simulated attacks",
+        "Evaluated performance of sequential and threaded versions via runtime benchmarking on x86-64 systems"
       ],
-      image: "/projects/BachelorArbeit.png",
-      link: "https://drive.google.com/file/d/19CdCGB4kddMgkG1zs9MRnZa9SFWYuMjG/view?usp=drive_link",
-      tags: ["Python", "Qiskit", "Quantum Computing"]
-    }
+      image: "/projects/MD2Hashing.png",
+      link: "https://drive.google.com/file/d/14DPPTVg3nb2QSSSLYA9TkreFDbffloH_/view?usp=drive_link",
+      tags: ["C", "Multithreading", "Cryptography"]
+    },
   ],
   
   voluntaryWork: [
@@ -298,13 +298,6 @@ export const cvData: CVData = {
   ],
   
   awards: [
-    {
-      title: "Gold Medal - Top 3 High School Graduate in 2021 in Albania",
-      year: "2021",
-      category: "recognition",
-      image: "/awards/GoldMedal.png",
-      link: "https://drive.google.com/file/d/1Br7GBTlr8vW971X-7d47XNBwollfCFE6/view?usp=drive_link"
-    },
     {
       title: "Member of International Institute for Extraordinary Intelligence ATOM",
       year: "2017 - ongoing",
@@ -318,6 +311,13 @@ export const cvData: CVData = {
       category: "recognition",
       image: "/awards/Mensa International.png",
       link: "https://drive.google.com/file/d/1X5vwgHZNvgNw31WEb5JPBfCC7mTb--Yy/view?usp=drive_link"
+    },
+    {
+      title: "Gold Medal - Top 3 High School Graduate in 2021 in Albania",
+      year: "2021",
+      category: "recognition",
+      image: "/awards/GoldMedal.png",
+      link: "https://drive.google.com/file/d/1Br7GBTlr8vW971X-7d47XNBwollfCFE6/view?usp=drive_link"
     },
     {
       title: "DAAD Scholarship Winner + Holder",

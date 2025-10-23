@@ -19,7 +19,7 @@ const Hero = () => {
       <div className="max-w-4xl w-full text-center space-y-8 animate-fade-in relative z-10">
         {/* Profile Image */}
         <div className="flex justify-center mb-8">
-          <div className="relative w-48 h-48 rounded-full overflow-hidden shadow-soft border-4 border-white">
+          <div className="relative w-64 h-64 rounded-full overflow-hidden shadow-soft border-4 border-white">
             <img 
               src={personal.image} 
               alt={personal.name}
