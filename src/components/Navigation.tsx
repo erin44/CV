@@ -25,10 +25,10 @@ const Navigation = () => {
     { id: 'home', label: 'Home' },
     { id: 'experience', label: 'Experience' },
     { id: 'education', label: 'Education' },
-    { id: 'skills', label: 'Skills' },
-    { id: 'projects', label: 'Projects' },
-    { id: 'voluntary', label: 'Voluntary' },
     { id: 'awards', label: 'Awards' },
+    { id: 'projects', label: 'Projects' },
+    { id: 'skills', label: 'Skills' },
+    { id: 'voluntary', label: 'Voluntary' },
     { id: 'contact', label: 'Contact' },
   ];
 
