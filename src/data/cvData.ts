@@ -255,6 +255,17 @@ export const cvData: CVData = {
   
   projects: [
     {
+      title: "AULA - Education Platform (TUM.ai x Anthropic Hackathon)",
+      description: [
+        "Built a FastAPI platform that transforms PDF slides into interactive educational videos using a 6-stage AI pipeline with Claude-3.5-Sonnet, Claude-Opus-4, and Manim animations",
+        "Implemented hybrid RAG system combining ChromaDB vector search and BM25 retrieval for intelligent content generation",
+        "Architected sequential video generation with ElevenLabs TTS voiceover, retry logic, and resource management for GPU-intensive rendering"
+      ],
+      image: "/projects/AULA.png",
+      link: "https://www.youtube.com/watch?v=FFNIY6vhThM",
+      tags: ["FastAPI", "Claude AI", "RAG", "ChromaDB", "Manim", "React", "ElevenLabs", "Video Generation", "Educational AI"]
+    },
+    {
       title: "Bachelor Thesis | Quantum Circuit Compilation",
       description: [
         "Researched quantum circuit cutting methods with emphasis on RZZ-gate optimizations to reduce sampling overhead",
