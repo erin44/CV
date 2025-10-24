@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Mail, MapPin, Phone } from "lucide-react";
+import { Mail, MapPin, Phone, FileText } from "lucide-react";
 import { cvData } from "@/data/cvData";
 import { scrollToSection } from "@/lib/scrollUtils";
 
@@ -70,9 +70,20 @@ const Hero = () => {
 
         {/* CTA Buttons */}
         <div className="flex flex-wrap justify-center gap-4 pt-4">
+          {personal.cvUrl && (
+            <Button 
+              size="lg"
+              className="gradient-primary hover:opacity-90 transition-opacity shadow-soft"
+              onClick={() => window.open(personal.cvUrl, '_blank')}
+            >
+              <FileText className="w-4 h-4 mr-2" />
+              Download CV
+            </Button>
+          )}
           <Button 
             size="lg"
-            className="gradient-primary hover:opacity-90 transition-opacity shadow-soft"
+            className={personal.cvUrl ? "" : "gradient-primary hover:opacity-90 transition-opacity shadow-soft"}
+            variant={personal.cvUrl ? "outline" : undefined}
             onClick={() => scrollToSection('contact')}
           >
             Get in Touch

@@ -22,6 +22,7 @@ export interface Education {
   period: string;
   details?: string;
   coursework?: string[];
+  diplomaUrl?: string;
 }
 
 export interface Skill {
@@ -66,6 +67,7 @@ export interface CVData {
     phone?: string;
     location?: string;
     image?: string;
+    cvUrl?: string;
   };
   social: SocialLink[];
   experience: Experience[];
@@ -87,7 +89,8 @@ export const cvData: CVData = {
     email: "erinkerciku003@gmail.com",
     phone: "(+49) 17682053823",
     location: "Munich, Germany",
-    image: "/fotoErinOct2025.jpeg"
+    image: "/fotoErinOct2025.jpeg",
+    cvUrl: "https://drive.google.com/file/d/1fXU2NLC_EvVSxGan1KxP1yeKlT7gRV9J/view?usp=drive_link"
   },
   
   social: [
@@ -200,7 +203,8 @@ export const cvData: CVData = {
       institution: "Sami Frashëri High School",
       location: "Tirana, Albania",
       period: "09/2018 - 06/2021",
-      details: "GPA: 9.97/10"
+      details: "GPA: 9.97/10",
+      diplomaUrl: "https://drive.google.com/file/d/1tYwLTOo8mQebWqmN13lKDol-dGrGwj4K/view?usp=drive_link"
     }
   ],
   

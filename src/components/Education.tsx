@@ -1,5 +1,6 @@
-import { GraduationCap } from "lucide-react";
+import { GraduationCap, ExternalLink } from "lucide-react";
 import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 import { cvData } from "@/data/cvData";
 
 const Education = () => {
@@ -32,11 +33,24 @@ const Education = () => {
                 </span>
               </div>
               
-              {edu.details && (
-                <p className="text-base text-muted-foreground mt-3">
-                  {edu.details}
-                </p>
-              )}
+              <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-3">
+                {edu.details && (
+                  <p className="text-base text-muted-foreground">
+                    {edu.details}
+                  </p>
+                )}
+                {edu.diplomaUrl && (
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    onClick={() => window.open(edu.diplomaUrl, '_blank')}
+                    className="hover:bg-primary/10 whitespace-nowrap"
+                  >
+                    <ExternalLink className="w-4 h-4 mr-2" />
+                    View Diploma
+                  </Button>
+                )}
+              </div>
               
               {edu.coursework && edu.coursework.length > 0 && (
                 <div className="mt-4">
