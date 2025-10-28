@@ -90,7 +90,7 @@ export const cvData: CVData = {
     phone: "(+49) 17682053823",
     location: "Munich, Germany",
     image: "/fotoErinOct2025.jpeg",
-    cvUrl: "https://drive.google.com/file/d/1fXU2NLC_EvVSxGan1KxP1yeKlT7gRV9J/view?usp=drive_link"
+    cvUrl: "https://drive.google.com/file/d/1S820riHLSQGYHVj5KY0ev4yFlQHfTGKn/view?usp=drive_link"
   },
   
   social: [
