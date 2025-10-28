@@ -2,9 +2,17 @@ import { Button } from "@/components/ui/button";
 import { Mail, MapPin, Phone, FileText } from "lucide-react";
 import { cvData } from "@/data/cvData";
 import { scrollToSection } from "@/lib/scrollUtils";
+import { trackDownload } from "@/lib/analytics";
 
 const Hero = () => {
   const { personal } = cvData;
+
+  const handleCVDownload = () => {
+    trackDownload('Erin_Kerciku_CV.pdf');
+    if (personal.cvUrl) {
+      window.open(personal.cvUrl, '_blank');
+    }
+  };
 
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center px-4 py-20 overflow-hidden">
@@ -46,7 +54,7 @@ const Hero = () => {
         {/* Contact Info */}
         <div className="flex flex-wrap justify-center gap-4 text-base text-muted-foreground">
           {personal.email && (
-            <a 
+            <a
               href={`mailto:${personal.email}`}
               className="flex items-center gap-2 hover:text-primary transition-colors"
             >
@@ -71,10 +79,10 @@ const Hero = () => {
         {/* CTA Buttons */}
         <div className="flex flex-wrap justify-center gap-4 pt-4">
           {personal.cvUrl && (
-            <Button 
+            <Button
               size="lg"
               className="gradient-primary hover:opacity-90 transition-opacity shadow-soft"
-              onClick={() => window.open(personal.cvUrl, '_blank')}
+              onClick={handleCVDownload}
             >
               <FileText className="w-4 h-4 mr-2" />
               Download CV

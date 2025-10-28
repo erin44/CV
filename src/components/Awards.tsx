@@ -2,6 +2,7 @@ import { Award, Trophy, GraduationCap, Star } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { cvData } from "@/data/cvData";
+import { trackAwardClick } from "@/lib/analytics";
 
 const Awards = () => {
   const categoryIcons = {
@@ -84,13 +85,14 @@ const Awards = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block"
+                onClick={() => trackAwardClick(award.title, award.link)}
               >
                 <Card className="group overflow-hidden shadow-card hover:shadow-soft transition-all duration-300 hover:translate-y-[-4px] cursor-pointer border-2 border-primary/20 hover:border-primary/40 bg-gradient-to-br from-white to-primary/5">
                   {CardContent}
                 </Card>
               </a>
             ) : (
-              <Card 
+              <Card
                 key={index}
                 className="group overflow-hidden shadow-card hover:shadow-soft transition-all duration-300 hover:translate-y-[-4px] border-2 border-primary/20 hover:border-primary/40 bg-gradient-to-br from-white to-primary/5"
               >

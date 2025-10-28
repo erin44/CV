@@ -42,6 +42,8 @@ export interface Project {
   image?: string;
   link: string;
   tags?: string[];
+  videoUrl?: string;
+  date?: string;
 }
 
 export interface VoluntaryWork {
@@ -267,18 +269,9 @@ export const cvData: CVData = {
       ],
       image: "/projects/AULA.png",
       link: "https://www.youtube.com/watch?v=FFNIY6vhThM",
-      tags: ["FastAPI", "Claude AI", "RAG", "ChromaDB", "Manim", "React", "ElevenLabs", "Video Generation", "Educational AI"]
-    },
-    {
-      title: "Bachelor Thesis | Quantum Circuit Compilation",
-      description: [
-        "Researched quantum circuit cutting methods with emphasis on RZZ-gate optimizations to reduce sampling overhead",
-        "Implemented compiler-level experiments using IBM Qiskit and the Circuit Knitting Toolbox",
-        "Analyzed performance across random and benchmark circuits, achieving up to 3x reduction in computational cost compared to CNOT-based methods"
-      ],
-      image: "/projects/BachelorArbeit.png",
-      link: "https://drive.google.com/file/d/19CdCGB4kddMgkG1zs9MRnZa9SFWYuMjG/view?usp=drive_link",
-      tags: ["Python", "Qiskit", "Quantum Computing"]
+      videoUrl: "https://youtu.be/fGpFaebHA-w",
+      tags: ["FastAPI", "Claude AI", "RAG", "ChromaDB", "Manim", "React", "ElevenLabs", "Video Generation", "Educational AI"],
+      date: "09/2025"
     },
     {
       title: "Internet Providers Comparison Website",
@@ -289,7 +282,20 @@ export const cvData: CVData = {
       ],
       image: "/projects/Check24InternetComparison.png",
       link: "https://github.com/erin44/Check24GenDev",
-      tags: ["NextJS", "TypeScript", "Redis", "API Design"]
+      tags: ["NextJS", "TypeScript", "Redis", "API Design"],
+      date: "05/2025"
+    },
+    {
+      title: "Bachelor Thesis | Quantum Circuit Compilation",
+      description: [
+        "Researched quantum circuit cutting methods with emphasis on RZZ-gate optimizations to reduce sampling overhead",
+        "Implemented compiler-level experiments using IBM Qiskit and the Circuit Knitting Toolbox",
+        "Analyzed performance across random and benchmark circuits, achieving up to 3x reduction in computational cost compared to CNOT-based methods"
+      ],
+      image: "/projects/BachelorArbeit.png",
+      link: "https://drive.google.com/file/d/19CdCGB4kddMgkG1zs9MRnZa9SFWYuMjG/view?usp=drive_link",
+      tags: ["Python", "Qiskit", "Quantum Computing"],
+      date: "08/2024"
     },
     {
       title: "MD2 Cryptographic Hash Function Analysis",
@@ -300,7 +306,8 @@ export const cvData: CVData = {
       ],
       image: "/projects/MD2Hashing.png",
       link: "https://drive.google.com/file/d/14DPPTVg3nb2QSSSLYA9TkreFDbffloH_/view?usp=drive_link",
-      tags: ["C", "Multithreading", "Cryptography"]
+      tags: ["C", "Multithreading", "Cryptography"],
+      date: "02/2023"
     },
   ],
   
