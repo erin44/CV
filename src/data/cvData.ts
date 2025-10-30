@@ -13,6 +13,7 @@ export interface Experience {
   location: string;
   period: string;
   description: string[];
+  videoUrl?: string;
 }
 
 export interface Education {
@@ -128,7 +129,8 @@ export const cvData: CVData = {
       description: [
         "Designed and developed both an iOS and visionOS application for the company to showcase modern car light features in an immersive space",
         "Responsible for setting up the project repositories infrastructure, CI/CD pipelines, the app deployment through Fastlane and Testflight"
-      ]
+      ],
+      videoUrl: "https://youtu.be/fGpFaebHA-w?si=PgNOrDPdQwHnSEnK"
     },
     {
       title: "Software Developer (Working Student)",
@@ -269,7 +271,7 @@ export const cvData: CVData = {
       ],
       image: "/projects/AULA.png",
       link: "https://www.youtube.com/watch?v=FFNIY6vhThM",
-      videoUrl: "https://youtu.be/fGpFaebHA-w",
+      videoUrl: "https://www.youtube.com/watch?v=FFNIY6vhThM",
       tags: ["FastAPI", "Claude AI", "RAG", "ChromaDB", "Manim", "React", "ElevenLabs", "Video Generation", "Educational AI"],
       date: "09/2025"
     },

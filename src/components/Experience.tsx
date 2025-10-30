@@ -3,6 +3,11 @@ import { Card } from "@/components/ui/card";
 import { cvData } from "@/data/cvData";
 
 const Experience = () => {
+  const getYouTubeEmbedUrl = (url: string) => {
+    const videoIdMatch = url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/)([^&?]+)/);
+    return videoIdMatch ? `https://www.youtube.com/embed/${videoIdMatch[1]}` : null;
+  };
+
   return (
     <section id="experience" className="py-20 px-4">
       <div className="max-w-4xl mx-auto">
@@ -32,7 +37,7 @@ const Experience = () => {
                 </span>
               </div>
               
-              <ul className="space-y-3 pl-0">
+              <ul className="space-y-3 pl-0 mb-4">
                 {exp.description.map((item, idx) => (
                   <li 
                     key={idx}
@@ -43,6 +48,18 @@ const Experience = () => {
                   </li>
                 ))}
               </ul>
+
+              {exp.videoUrl && getYouTubeEmbedUrl(exp.videoUrl) && (
+                <div className="mt-4 rounded-lg overflow-hidden bg-muted aspect-video border-2 border-border">
+                  <iframe
+                    src={getYouTubeEmbedUrl(exp.videoUrl)!}
+                    title={`${exp.title} at ${exp.company}`}
+                    className="w-full h-full"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                </div>
+              )}
             </Card>
           ))}
         </div>
