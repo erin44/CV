@@ -16,12 +16,23 @@ const Hero = () => {
 
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center px-4 py-20 overflow-hidden">
-      {/* Animated Background */}
-      <div className="absolute inset-0 -z-10">
-        {/* Gradient Orbs */}
-        <div className="absolute top-20 left-10 w-72 h-72 bg-primary/20 rounded-full blur-3xl animate-float" />
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent/20 rounded-full blur-3xl animate-float-delayed" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-primary/10 rounded-full blur-3xl animate-float-slow" />
+      {/* SVG wave at bottom */}
+      <div className="absolute inset-0 -z-10 overflow-hidden">
+        <svg
+          className="absolute bottom-0 left-0 w-full"
+          viewBox="0 0 1440 200"
+          preserveAspectRatio="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0,100 C240,160 480,40 720,100 C960,160 1200,40 1440,100 L1440,200 L0,200 Z"
+            fill="hsl(215 65% 35% / 0.06)"
+          />
+          <path
+            d="M0,130 C360,80 720,170 1080,120 C1260,95 1380,140 1440,150 L1440,200 L0,200 Z"
+            fill="hsl(215 65% 35% / 0.04)"
+          />
+        </svg>
       </div>
 
       <div className="max-w-4xl w-full text-center space-y-8 animate-fade-in relative z-10">
