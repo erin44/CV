@@ -14,6 +14,9 @@ export interface Experience {
   period: string;
   description: string[];
   videoUrl?: string;
+  logo?: string;
+  logoDark?: boolean;
+  logoBg?: string;
 }
 
 export interface Education {
@@ -93,7 +96,7 @@ export const cvData: CVData = {
     phone: "(+49) 17682053823",
     location: "Munich, Germany",
     image: "/fotoErinOct2025.jpeg",
-    cvUrl: "https://drive.google.com/file/d/1S820riHLSQGYHVj5KY0ev4yFlQHfTGKn/view?usp=drive_link"
+    cvUrl: "https://drive.google.com/file/d/1CkxSY38ghcYzmu2sUAkKwF1PsdGQck3z/view?usp=sharing"
   },
   
   social: [
@@ -111,10 +114,23 @@ export const cvData: CVData = {
   
   experience: [
     {
+      title: "Software Engineer (Intern)",
+      company: "Apple",
+      location: "Munich",
+      period: "04/2026 - Ongoing",
+      logo: "/companies/apple.png",
+      description: [
+        "Building an AI-assisted document analysis pipeline from scratch",
+        "Designing a modular, database-backed architecture with automated migrations and a clean API layer, balancing reliability with maintainability",
+        "Delivering end-to-end as a sole developer turning requirements into a shipped product"
+      ]
+    },
+    {
       title: "AI/NLP Engineer (Working Student)",
       company: "Rohde & Schwarz",
       location: "Munich",
       period: "08/2025 - Ongoing",
+      logo: "/companies/rohde-schwarz.png",
       description: [
         "Helping analyze and curate raw data sources by establishing pipelines for data processing and evaluation",
         "Developing advanced RAG/Agentic-RAG systems and integrating it into current web/cloud applications",
@@ -126,6 +142,8 @@ export const cvData: CVData = {
       company: "Quartett Mobile",
       location: "Munich",
       period: "04/2025 - 08/2025",
+      logo: "/companies/quartett-mobile.png",
+      logoBg: "#0073CF",
       description: [
         "Designed and developed both an iOS and visionOS application for the company to showcase modern car light features in an immersive space",
         "Responsible for setting up the project repositories infrastructure, CI/CD pipelines, the app deployment through Fastlane and Testflight"
@@ -137,6 +155,7 @@ export const cvData: CVData = {
       company: "Rohde & Schwarz",
       location: "Munich",
       period: "10/2024 - 08/2025",
+      logo: "/companies/rohde-schwarz.png",
       description: [
         "Designed interfaces based on user requirements using Google Protocol Buffers (Protobuf)",
         "Conducted error and root-cause analyses and implemented effective solutions that improved system stability and performance",
@@ -148,6 +167,7 @@ export const cvData: CVData = {
       company: "Technical University of Munich",
       location: "Munich",
       period: "08/2024 - 10/2024",
+      logo: "/companies/tum.jpg",
       description: [
         "Tutor for the Discrete Probability Theory"
       ]
@@ -157,6 +177,7 @@ export const cvData: CVData = {
       company: "Maltego Technologies",
       location: "Munich",
       period: "10/2023 - 02/2024",
+      logo: "/companies/maltego.jpg",
       description: [
         "Designed and developed the main part of the application frontend using React and co-integrated everything with the data visualization and backend team",
         "Real-time collaboration part between multiple users",
@@ -171,7 +192,7 @@ export const cvData: CVData = {
       institution: "Technical University of Munich (TUM)",
       location: "Munich, Germany",
       period: "10/2024 - Ongoing",
-      details: "GPA: 1.9/1.0 (current)",
+      details: "GPA: 1.8/1.0 (current)",
       coursework: [
         "Natural Language Processing",
         "Advanced Natural Language Processing",
@@ -179,7 +200,9 @@ export const cvData: CVData = {
         "Network Security",
         "Algorithms for Uncertainty Quantification",
         "Application and Implementation of Database Systems",
-        "iOS Practical Lab"
+        "iOS Practical Lab",
+        "Efficient Algorithms and Data Structures",
+        "Causality"
       ]
     },
     {

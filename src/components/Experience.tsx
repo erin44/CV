@@ -25,12 +25,27 @@ const Experience = () => {
               className="p-6 shadow-card hover:shadow-soft transition-all duration-300 hover:translate-y-[-2px]"
             >
               <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-2 mb-4">
-                <div>
-                  <h3 className="text-2xl font-semibold text-foreground">
-                    {exp.title}
-                  </h3>
-                  <p className="text-lg text-primary font-medium">{exp.company}</p>
-                  <p className="text-base text-muted-foreground">{exp.location}</p>
+                <div className="flex items-start gap-4">
+                  {exp.logo && (
+                    <div
+                      className={`shrink-0 mt-1 w-20 h-20 flex items-center justify-center ${exp.logoBg ? "rounded-xl p-2" : ""}`}
+                      style={exp.logoBg ? { backgroundColor: exp.logoBg } : undefined}
+                    >
+                      <img
+                        src={exp.logo}
+                        alt={`${exp.company} logo`}
+                        className="w-full h-full object-contain"
+                        style={exp.logoDark ? { filter: "invert(1)" } : undefined}
+                      />
+                    </div>
+                  )}
+                  <div>
+                    <h3 className="text-2xl font-semibold text-foreground">
+                      {exp.title}
+                    </h3>
+                    <p className="text-lg text-primary font-medium">{exp.company}</p>
+                    <p className="text-base text-muted-foreground">{exp.location}</p>
+                  </div>
                 </div>
                 <span className="text-base font-medium text-muted-foreground whitespace-nowrap">
                   {exp.period}
